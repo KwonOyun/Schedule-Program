@@ -1,0 +1,47 @@
+    body {
+    
+      margin: 50px;
+    }
+    #month {
+      margin: auto;
+      font-size: 18px;
+      width: 100px;
+      height: 30px;
+      background-color: yellow;
+      border: 3px solid black;
+      text-align: center;
+    }
+  
+    table { 
+      background: #fff;
+      border-collapse: collapse;
+      border: 1px solid black;
+      color: black;
+      font-size: 13px;
+      width: 100%;
+   
+    }
+    td {
+      border: 1px solid black;
+      color: black;
+    
+    }
+    .day {
+      height: 40px;
+      color: black;
+      font-weight: 700;
+      background-color: #C0C0C0;
+      text-align: center; 
+    }
+    .date{
+      text-align: left;
+      width: 120px;
+      word-break: break-all;
+      table-layout: fixed;
+      height: 100px;
+    }
+   /* .add{  //추가가 될 일정들 일자 뒤에 div태그로 들어간다.
+      border: 1px solid black;
+      padding: 2px;
+      background-color: yellow;
+    }*/

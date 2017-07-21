@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="kwon.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="kwon.js"></script>
+  
+
+</head>
+
+<body>
+
+<div>
+  <header id="head">
+    <div id="month">2017.6</div>  <!-- 새로운 스케줄을 추가하는 버튼과 읽어오는 버튼을 추가 -->
+    <button id="newnote" onclick="newschedule()">New Note</button>
+    <button id="readnote" onclick="load()">Read Note</button>
+    <button onclick="reset()">local clear()</button><!-- 로컬 스토리지 초기화 하는 버튼 (필요시 사용)-->
+  </header>
+<table>
+  <tr>   <!-- 요일 설정 -->
+    <td class="day">일</td>
+    <td class="day">월</td>
+    <td class="day">화</td>
+    <td class="day">수</td>
+    <td class="day">목</td>
+    <td class="day">금</td>
+    <td class="day">토</td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>    <!-- 각각의 날짜들을 생성하고 ondrop="drop(event)" ondragover="allowDrop(event) 설정 -->
+    <td class="date" id="1" ondrop="drop(event)" ondragover="allowDrop(event)">1</td>
+    <td class="date" id="2" ondrop="drop(event)" ondragover="allowDrop(event)">2</td>
+    <td class="date" id="3" ondrop="drop(event)" ondragover="allowDrop(event)">3</td>
+    <td class="date" id="4" ondrop="drop(event)" ondragover="allowDrop(event)">4</td>
+    <td class="date" id="5" ondrop="drop(event)" ondragover="allowDrop(event)">5</td>
+  </tr>
+  <tr>
+    <td class="date" id="6" ondrop="drop(event)" ondragover="allowDrop(event)">6</td>
+    <td class="date" id="7" ondrop="drop(event)" ondragover="allowDrop(event)">7</td>
+    <td class="date" id="8" ondrop="drop(event)" ondragover="allowDrop(event)">8</td>
+    <td class="date" id="9" ondrop="drop(event)" ondragover="allowDrop(event)">9</td>
+    <td class="date" id="10" ondrop="drop(event)" ondragover="allowDrop(event)">10</td>
+    <td class="date" id="11" ondrop="drop(event)" ondragover="allowDrop(event)">11</td>
+    <td class="date" id="12" ondrop="drop(event)" ondragover="allowDrop(event)">12</td>
+  </tr>
+  <tr class="date">
+    <td class="date" id="13" ondrop="drop(event)" ondragover="allowDrop(event)">13</td>
+    <td class="date" id="14" ondrop="drop(event)" ondragover="allowDrop(event)">14</td>
+    <td class="date" id="15" ondrop="drop(event)" ondragover="allowDrop(event)">15</td>
+    <td class="date" id="16" ondrop="drop(event)" ondragover="allowDrop(event)">16</td>
+    <td class="date" id="17" ondrop="drop(event)" ondragover="allowDrop(event)">17</td>
+    <td class="date" id="18" ondrop="drop(event)" ondragover="allowDrop(event)">18</td>
+    <td class="date" id="19" ondrop="drop(event)" ondragover="allowDrop(event)">19</td>
+  </tr>
+  <tr class="date">
+    <td class="date" id="20" ondrop="drop(event)" ondragover="allowDrop(event)">20</td>
+    <td class="date" id="21" ondrop="drop(event)" ondragover="allowDrop(event)">21</td>
+    <td class="date" id="22" ondrop="drop(event)" ondragover="allowDrop(event)">22</td>
+    <td class="date" id="23" ondrop="drop(event)" ondragover="allowDrop(event)">23</td>
+    <td class="date" id="24" ondrop="drop(event)" ondragover="allowDrop(event)">24</td>
+    <td class="date" id="25" ondrop="drop(event)" ondragover="allowDrop(event)">25</td>
+    <td class="date" id="26" ondrop="drop(event)" ondragover="allowDrop(event)">26</td>
+  </tr>
+  <tr class="date">
+    <td class="date" id="27" ondrop="drop(event)" ondragover="allowDrop(event)">27</td>
+    <td class="date" id="28" ondrop="drop(event)" ondragover="allowDrop(event)">28</td>
+    <td class="date" id="29" ondrop="drop(event)" ondragover="allowDrop(event)">29</td>
+    <td class="date" id="30" ondrop="drop(event)" ondragover="allowDrop(event)">30</td>
+    <td class="date" id="31" ondrop="drop(event)" ondragover="allowDrop(event)">31</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</div>
+
+
+</body>
+</html>
